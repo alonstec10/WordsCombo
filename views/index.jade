@@ -1,0 +1,49 @@
+extends layout
+
+block content
+  p Welcome to #{title}
+  div(class='container')
+   div(class="box box1")
+    span(class="number") 1
+    span(class='letter')
+   div(class="box box2" ng-click="addNumber(2)")
+    span(class="number") 2
+    span(class='letter') a b c
+   div(class="box box3" ng-click="addNumber(3)")
+    span(class="number") 3
+    span(class='letter') d e f
+   div(class="box box4" ng-click="addNumber(4)")
+    span(class="number") 4
+    span(class='letter') g h i
+   div(class="box box5" ng-click="addNumber(5)")
+    span(class="number") 5
+    span(class='letter') j k l
+   div(class="box box6" ng-click="addNumber(6)")
+    span(class="number") 6
+    span(class='letter') m n o
+   div(class="box box7" ng-click="addNumber(7)")
+    span(class="number") 7
+    span(class='letter') p q r s
+   div(class="box box8" ng-click="addNumber(8)")
+    span(class="number") 8
+    span(class='letter') t u v
+   div(class="box box9" ng-click="addNumber(9)")
+    span(class="number") 9
+    span(class='letter') w x y z
+   div(id='bottom_box' class="box box10")
+    span(class="number") 0
+    span(class='letter')
+  div(id="response_container" )
+   input(type="text" id="preview_numbers" ng-model="nums")
+   br
+   br
+   button(type="button" id="submit" value="Send" ng-click="request()") Send
+   br
+   br
+   Possible Words:
+   br
+   select(id="response")
+    option(ng-repeat='post in posts track by $index') {{ post }}
+   br
+   div(id='response_warning')   
+  script(src="/javascripts/app.js")

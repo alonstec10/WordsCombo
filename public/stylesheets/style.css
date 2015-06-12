@@ -1,0 +1,55 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.container {
+	width:308px;
+	height: 500px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top:50px;
+	border:thin solid yellow;
+}
+.box {
+	width: 100px;
+	height: 100px;
+	float: left;
+	text-align: center;
+	position: relative;
+	border:thin solid yellow;
+}
+.letter {
+	position: absolute;
+	bottom: 10px;
+	left:0px;
+	height: 15px;
+	width: 100px;
+}
+.number {
+	position: absolute;
+	top: 25px;
+	left: 0;
+	width: 100px;
+	height: 55px;
+	font-size: 25px;
+}
+#bottom_box {
+	margin-left: 100px;
+}
+#response_container{
+	position: absolute;
+	left:40px;
+	top:140px;
+	width: 100px;
+	height: 10px;
+	background-color: blue;
+}
+#preview_numbers{ width: 200px;height: 30px; }
+#submit { width: 200px;height: 30px;}
+#response { width: 200px;height: 30px; }
+#response_warning {background-color: :red;width:400px; height: 100px;}
